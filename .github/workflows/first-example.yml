@@ -1,0 +1,13 @@
+name: FirstExample
+on: push
+jobs:
+    first-job:
+        runs-on: ubutnu-latest
+        steps:
+        - name: myfirst job
+          run: echo "hello github actions"
+        - name: list the directories
+          run: ls
+        - name: read the file
+          run: cat readme.md
+
